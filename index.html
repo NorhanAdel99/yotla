@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <!-- meta  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- // bootstrab // -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <!-- flatPicker -->
+    <link rel="stylesheet" href="css/flatpickr.min.css">
+    <!-- // fontawesome // -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- // css // -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/en-style.css"> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="side_menu d-flex flex-column ">
+
+        <div class=" contain_dashboard_logo text-center mb-20 ">
+            <img src="img/user2.png" alt="user" class="userImg" loading="lazy">
+
+            <h6 class=" text-wrap hide-section">
+                مركز النور لتحفيظ القرآن الكريم
+            </h6>
+        </div>
+        <ul class="side_menu_ul">
+            <li class="about_section active">
+                <a href="index.html" class="d-flex align-items-center  ">
+                    <i class="fa-solid fa-house "></i>
+                    <span class="hide-section m-start-10">الرئيسية </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="supervisor.html" class="d-flex align-items-center  ">
+                    <i class="fa-regular fa-calendar-minus "></i>
+
+                    <span class="hide-section m-start-10"> المشرفون </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="teachers.html" class="d-flex align-items-center ">
+                    <i class="fa-solid fa-book-open "></i>
+                    <span class="hide-section m-start-10">المعلمون </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="students.html" class="d-flex align-items-center   ">
+                    <i class="fa-solid fa-book "></i>
+                    <span class="hide-section m-start-10"> الطلاب </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="rings.html" class="d-flex align-items-center  ">
+                    <i class="fa-regular fa-circle-dot "></i>
+                    <span class="hide-section m-start-10"> الحلقات </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="plans.html" class="d-flex align-items-center  ">
+                    <i class="fa-solid fa-clipboard-list "></i>
+                    <span class="hide-section m-start-10"> الخطط </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="settings.html" class="d-flex align-items-center  ">
+                    <i class="fa-solid fa-gear  "></i>
+                    <span class="hide-section m-start-10 "> الاعدادات </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="contactUs.html" class="d-flex align-items-center  ">
+                    <i class="fa-solid fa-phone  "></i>
+                    <span class="hide-section m-start-10 "> تواصل معنا </span>
+                </a>
+            </li>
+
+            <li class="about_section">
+                <a href="login.html" class="d-flex align-items-center  ">
+                    <i class="fa-solid fa-right-from-bracket "></i>
+                    <span class="hide-section m-start-10"> تسجيل الخروج </span>
+                </a>
+            </li>
+
+
+        </ul>
+    </div>
+    <div id="main">
+        <header class="dashboard_topper p-10">
+            <div class="container">
+                <div class="flex-between">
+                    <h5> الرئيسية </h5>
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="logo" class="logo m-end-10 m-auto" loading="lazy">
+                    </a>
+
+                    <a href="notification.html" class="contain-notification">
+                        <i class="fa-regular fa-bell f-20  main-color"></i>
+
+                    </a>
+
+
+
+                </div>
+            </div>
+        </header>
+        <div class="body-content">
+            <div class="container">
+
+                <div class="s-space">
+                    <div class="row align-items-center justify-content-center ">
+                        <div class="col-lg-10 d-flex flex-wrap justify-content-between ">
+                            <div class="col-lg-3 ">
+                                <div class="contain-date contain-select mb-3">
+                                    <span class="destinguished-box">الحلقة </span>
+                                    <select class="js-example-basic-multiple">
+                                        <option>الكل</option>
+                                        <option> الكل</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div
+                                class="col-lg-6 d-flex align-items-center flex-lg-nowrap flex-wrap justify-content-end">
+                                <div class="col-lg-5 p-0 m-lg-end-10">
+                                    <div class="contain-date mb-3"><label class="destinguished-box  mb-0"
+                                            for="input1">من
+                                        </label><input type="date" id="input1" placeholder="2023-01-01"
+                                            class="inputText1">
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 p-0">
+                                    <div class="contain-date mb-3"><label class="destinguished-box mb-0 "
+                                            for="input2">الي
+                                        </label><input type="date" id="input2" placeholder="2023-02-02"
+                                            class="inputText2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10 d-flex flex-wrap ">
+                            <div class="col-md-3 mb-3">
+                                <div class="mainBox">
+                                    <div class="containWavyShape">
+                                        <img src="img/wavyImg.png" alt="wavyImg" class="wavyImg">
+                                        <h1 class="num">
+                                            30
+                                        </h1>
+                                    </div>
+                                    <h5 class="text-muted">
+                                        مشرف
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="mainBox">
+                                    <div class="containWavyShape">
+                                        <img src="img/wavyImg.png" alt="wavyImg" class="wavyImg">
+                                        <h1 class="num">
+                                            30
+                                        </h1>
+                                    </div>
+                                    <h5 class="text-muted">
+                                        معلم
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="mainBox">
+                                    <div class="containWavyShape">
+                                        <img src="img/wavyImg.png" alt="wavyImg" class="wavyImg">
+                                        <h1 class="num">
+                                            30
+                                        </h1>
+                                    </div>
+                                    <h5 class="text-muted">
+                                        طالب
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="mainBox">
+                                    <div class="containWavyShape">
+                                        <img src="img/wavyImg.png" alt="wavyImg" class="wavyImg">
+                                        <h1 class="num">
+                                            30
+                                        </h1>
+                                    </div>
+                                    <h5 class="text-muted">
+                                        حلقة
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="mainBox">
+                                    <div class="containWavyShape">
+                                        <img src="img/wavyImg.png" alt="wavyImg" class="wavyImg">
+                                        <h1 class="num">
+                                            30
+                                        </h1>
+                                    </div>
+                                    <h5 class="text-muted">
+                                        طالب متميز ف الحفظ
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="mainBox">
+                                    <div class="containWavyShape">
+                                        <img src="img/wavyImg.png" alt="wavyImg" class="wavyImg">
+                                        <h1 class="num">
+                                            30
+                                        </h1>
+                                    </div>
+                                    <h5 class="text-muted">
+                                        طالب غير متقن
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="mainBox">
+                                    <div class="containWavyShape">
+                                        <img src="img/wavyImg.png" alt="wavyImg" class="wavyImg">
+                                        <h1 class="num">
+                                            30
+                                        </h1>
+                                    </div>
+                                    <h5 class="text-muted">
+                                        مشرف غائب
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="mainBox">
+                                    <div class="containWavyShape">
+                                        <img src="img/wavyImg.png" alt="wavyImg" class="wavyImg">
+                                        <h1 class="num">
+                                            30
+                                        </h1>
+                                    </div>
+                                    <h5 class="text-muted">
+                                        معلم غائب
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="mainBox">
+                                    <div class="containWavyShape">
+                                        <img src="img/wavyImg.png" alt="wavyImg" class="wavyImg">
+                                        <h1 class="num">
+                                            30
+                                        </h1>
+                                    </div>
+                                    <h5 class="text-muted">
+                                        طالب غائب
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="mainBox">
+                                    <div class="containWavyShape">
+                                        <img src="img/wavyImg.png" alt="wavyImg" class="wavyImg">
+                                        <h1 class="num">
+                                            30
+                                        </h1>
+                                    </div>
+                                    <h5 class="text-muted">
+                                        آية حفظ منجزه
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="mainBox">
+                                    <div class="containWavyShape">
+                                        <img src="img/wavyImg.png" alt="wavyImg" class="wavyImg">
+                                        <h1 class="num">
+                                            30
+                                        </h1>
+                                    </div>
+                                    <h5 class="text-muted">
+                                        آية مراجعة منجزه
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ________________ // loader // ________________ -->
+    <div class="loader">
+        <img src="img/logo_one.png" alt="" class="logoWhite animate__flip animate__animated">
+    </div>
+    <!-- _______________ // end_Page // _______________ -->
+    <!-- fixed -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/flatpicker.min.js"></script>
+    <!-- // main-script //  -->
+    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#reportCustomDisplay").html('Nothing Selected');
+            $(".inputText2").prop('disabled', true);
+            $(".inputText1").flatpickr({
+                minDate: "2023-01-20",
+                maxDate: "2023-02-02",
+                dateFormat: "Y-m-d",
+                defaultDate: ["2016-10-20", "2016-11-04"],
+                onChange: function (selectedDates, dateStr, instance) {
+                    $(".inputText2").prop('disabled', false);
+                    $(".inputText2").flatpickr({
+                        minDate: dateStr,
+                        maxDate: "2023-04-04",
+                        dateFormat: "Y-m-d",
+                    });
+                }
+            });
+        });
+        // ///////////////////////////////////
+        $(document).ready(function () {
+            $('.js-example-basic-multiple').select2();
+        });
+        let allLinks = document.querySelectorAll(".side_menu_ul li a ");
+
+        allLinks.forEach((link) => {
+            if (link.href == location.href) {
+                link.parentElement.classList.add('active')
+            } else if (link.href !== location.href) {
+                link.parentElement.classList.remove('active');
+            }
+        })
+    </script>
+
+</body>
+
+</html>

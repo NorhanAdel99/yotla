@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <!-- meta  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- // bootstrab // -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <!-- flatPicker -->
+    <link rel="stylesheet" href="css/flatpickr.min.css">
+    <!-- // fontawesome // -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- // css // -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/en-style.css"> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="side_menu d-flex flex-column ">
+
+        <div class=" contain_dashboard_logo text-center mb-20 ">
+            <img src="img/user2.png" alt="user" class="userImg" loading="lazy">
+
+            <h6 class=" text-wrap hide-section">
+                مركز النور لتحفيظ القرآن الكريم
+            </h6>
+        </div>
+        <ul class="side_menu_ul">
+            <li class="about_section active">
+                <a href="index.html" class="d-flex align-items-center  ">
+                    <i class="fa-solid fa-house "></i>
+                    <span class="hide-section m-start-10">الرئيسية </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="supervisor.html" class="d-flex align-items-center  ">
+                    <i class="fa-regular fa-calendar-minus "></i>
+
+                    <span class="hide-section m-start-10"> المشرفون </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="teachers.html" class="d-flex align-items-center ">
+                    <i class="fa-solid fa-book-open "></i>
+                    <span class="hide-section m-start-10">المعلمون </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="students.html" class="d-flex align-items-center   ">
+                    <i class="fa-solid fa-book "></i>
+                    <span class="hide-section m-start-10"> الطلاب </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="rings.html" class="d-flex align-items-center  ">
+                    <i class="fa-regular fa-circle-dot "></i>
+                    <span class="hide-section m-start-10"> الحلقات </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="plans.html" class="d-flex align-items-center  ">
+                    <i class="fa-solid fa-clipboard-list "></i>
+                    <span class="hide-section m-start-10"> الخطط </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="settings.html" class="d-flex align-items-center  ">
+                    <i class="fa-solid fa-gear  "></i>
+                    <span class="hide-section m-start-10 "> الاعدادات </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="contactUs.html" class="d-flex align-items-center  ">
+                    <i class="fa-solid fa-phone  "></i>
+                    <span class="hide-section m-start-10 "> تواصل معنا </span>
+                </a>
+            </li>
+
+            <li class="about_section">
+                <a href="login.html" class="d-flex align-items-center  ">
+                    <i class="fa-solid fa-right-from-bracket "></i>
+                    <span class="hide-section m-start-10"> تسجيل الخروج </span>
+                </a>
+            </li>
+
+
+        </ul>
+    </div>
+    <div id="main">
+        <header class="dashboard_topper p-10">
+            <div class="container">
+                <div class="flex-between">
+                    <h5> تفاصيل الحلقة </h5>
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="logo" class="logo m-end-10 m-auto" loading="lazy">
+                    </a>
+                    <a href="notification.html" class="contain-notification">
+                        <i class="fa-regular fa-bell f-20  main-color"></i>
+
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="body-content">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="s-space">
+                            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="ring-tab" data-toggle="tab" data-target="#ring"
+                                        type="button" role="tab" aria-controls="ring" aria-selected="true">
+                                        <div class="containTabImg">
+                                            <img src="img/ring.png" alt="tabImg" class="tabImg">
+                                        </div>
+                                        <h6 class="text-muted">الحلقة</h6>
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="profile-tab" data-toggle="tab" data-target="#profile"
+                                        type="button" role="tab" aria-controls="profile" aria-selected="false">
+                                        <div class="containTabImg">
+                                            <img src="img/supervisors.png" alt="tabImg" class="tabImg">
+                                        </div>
+                                        <h6 class="text-muted"> المشرفون </h6>
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link " id="home-tab" data-toggle="tab" data-target="#home"
+                                        type="button" role="tab" aria-controls="home" aria-selected="true">
+                                        <div class="containTabImg">
+                                            <img src="img/teachers.png" alt="tabImg" class="tabImg">
+                                        </div>
+                                        <h6 class="text-muted">المعلمون</h6>
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="teachers-tab" data-toggle="tab" data-target="#teachers"
+                                        type="button" role="tab" aria-controls="teachers" aria-selected="false">
+                                        <div class="containTabImg">
+                                            <img src="img/students.png" alt="tabImg" class="tabImg">
+                                        </div>
+                                        <h6 class="text-muted">الطلاب</h6>
+                                    </button>
+                                </li>
+
+                                <button class="nav-link deleteLink" type="button" role="tab" aria-selected="false"
+                                    data-toggle="modal" data-target="#deleteRings">
+                                    <div class="containTabImg">
+                                        <img src="img/delAccount.png" alt="tabImg" class="tabImg">
+                                    </div>
+                                    <h6 class="text-muted"> حذف الحلقة</h6>
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal  fade" id="deleteRings" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-sm">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body text-center">
+                                                <h6> هل حقا تريد خروج المشرف/ة من الحلقة </h6>
+                                            </div>
+                                            <div class="modal-footer modal-center flex-center border-0">
+                                                <button type="button" class="btn main_btn sm">نعم</button>
+                                                <button class="btn  main_btn btn-danger sm"
+                                                    data-dismiss="modal">لا</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="ring" role="tabpanel"
+                                    aria-labelledby="ring-tab">
+                                    <div class="frame rad-5 py-3 px-4 mb-3">
+                                        <form action="" id="ring">
+                                            <div class="form-group">
+                                                <label class="form-label" for="name"><span class="m-end-5"> اسم الحلقة
+                                                    </span><span class="text-danger f-16">*</span></label>
+                                                <input type="name" class="form-control" id="name"
+                                                    placeholder="الحلقة الاولي">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label" for="time"><span class="m-end-5"> الوقت الخاص
+                                                        بالحلقة
+                                                    </span><span class="text-danger f-16">*</span></label>
+                                                <input type="text" class="form-control" id="time" placeholder="حلقتان">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label" for="num"><span class="m-end-5"> العدد المسموح
+                                                        بالحلقة
+                                                    </span><span class="text-danger f-16">*</span></label>
+                                                <input type="time" class="form-control inputTime" id="num"
+                                                    placeholder="30">
+                                            </div>
+                                            <div class="form-row mb-3 align-items-end">
+                                                <div class="col-lg-3 col-md-6 col-12">
+                                                    <div class="form-group">
+                                                        <label for="text" class="form-label"><span class="m-end-5"> يوم
+                                                            </span><span class="text-danger f-16">*</span></label>
+                                                        <select class=" select form-control" name="states[]">
+                                                            <option value="السبت">السبت </option>
+                                                            <option value="الأحد">الأحد </option>
+                                                            <option value="الأثنين">الأثنين </option>
+                                                            <option value="الثلاثاء">الثلاثاء </option>
+                                                            <option value="الاربعاء">الاربعاء </option>
+                                                            <option value="الخميس">الخميس </option>
+                                                            <option value="الجمعة">الجمعة </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 col-12">
+                                                    <div class="form-group">
+                                                        <label for="from" class="form-label"><span class="m-end-5">
+                                                                من </span><span
+                                                                class="text-danger f-16">*</span></label>
+                                                        <input type="text" id="from"
+                                                            class="inputText1 from-control timeBox" placeholder="من">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 col-12">
+                                                    <div class="form-group">
+                                                        <label for="to" class="form-label"><span class="m-end-5">
+                                                                الي </span><span
+                                                                class="text-danger f-16">*</span></label>
+                                                        <input type="text" class="inputText2 from-control  timeBox"
+                                                            id="to" placeholder="الي">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 col-12">
+                                                    <div class="form-group">
+                                                        <button class="btn main_btn w-100 collectTime " type="button"> حفظ </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="containShowTime">
+                                                <div class="showTime mb-3" data-id="#one">
+                                                    <div>
+                                                        <div> السبت</div>
+                                                        <div>
+                                                            <span>من</span>
+                                                            <span class="fromText"> 10 ص </span>
+                                                            <span>الي</span>
+                                                            <span class="toText"> 6 م</span>
+                                                        </div>
+                                                    </div>
+                                                    <button class="btn btn-danger f-12 align-self-start py-1 px-3"> حذف
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <button class="btn main_btn w-100 collectTime " type="button" form="ring"> حفظ
+                                    </button>
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <div class="frame rad-5 py-3 px-4 mb-3">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="frame rad-5 d-flex justify-content-between mb-3">
+                                                    <div>
+                                                        <h6 class="mb-1">احمد محمد محمود عبدالله</h6>
+                                                        <div class="text-muted mb-1">
+                                                            <span>رقم الجوال : </span>
+                                                            <span>0100101010</span>
+                                                        </div>
+                                                        <div class="text-muted mb-1">
+                                                            <span> تاريخ الميلاد : </span>
+                                                            <span> 20/02/2023</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="align-items-start ">
+                                                        <button class="btn btn-danger py-1 px-3 f-13 "
+                                                            data-toggle="modal" data-target="#editContent1"> حذف
+                                                        </button>
+                                                    </div>
+                                                    <!-- Modal -->
+                                                    <div class="modal  fade" id="editContent1" tabindex="-1"
+                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-sm">
+                                                            <div class="modal-content">
+
+                                                                <div class="modal-body text-center">
+                                                                    <h6> هل حقا تريد خروج المشرف/ة من الحلقة </h6>
+                                                                </div>
+                                                                <div
+                                                                    class="modal-footer modal-center flex-center border-0">
+                                                                    <a href="index.html" type="button"
+                                                                        class="btn main_btn sm">نعم</a>
+                                                                    <button type="button"
+                                                                        class="btn  main_btn btn-danger sm"
+                                                                        data-dismiss="modal">لا</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="frame rad-5 d-flex justify-content-between mb-3">
+                                                    <div>
+                                                        <h6 class="mb-1">احمد محمد محمود عبدالله</h6>
+                                                        <div class="text-muted mb-1">
+                                                            <span>رقم الجوال : </span>
+                                                            <span>0100101010</span>
+                                                        </div>
+                                                        <div class="text-muted mb-1">
+                                                            <span> تاريخ الميلاد : </span>
+                                                            <span> 20/02/2023</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="align-items-start ">
+                                                        <button class="btn btn-danger py-1 px-3 f-13 "
+                                                            data-toggle="modal" data-target="#editContent2"> حذف
+                                                        </button>
+                                                    </div>
+                                                    <!-- Modal -->
+                                                    <div class="modal  fade" id="editContent2" tabindex="-1"
+                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-sm">
+                                                            <div class="modal-content">
+
+                                                                <div class="modal-body text-center">
+                                                                    <h6> هل حقا تريد خروج المشرف/ة من الحلقة </h6>
+                                                                </div>
+                                                                <div
+                                                                    class="modal-footer modal-center flex-center border-0">
+                                                                    <a href="index.html" type="button"
+                                                                        class="btn main_btn sm">نعم</a>
+                                                                    <button type="button"
+                                                                        class="btn  main_btn btn-danger sm "
+                                                                        data-dismiss="modal">لا</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="frame rad-5 d-flex justify-content-between mb-3">
+                                                    <div>
+                                                        <h6 class="mb-1">احمد محمد محمود عبدالله</h6>
+                                                        <div class="text-muted mb-1">
+                                                            <span>رقم الجوال : </span>
+                                                            <span>0100101010</span>
+                                                        </div>
+                                                        <div class="text-muted mb-1">
+                                                            <span> تاريخ الميلاد : </span>
+                                                            <span> 20/02/2023</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="align-items-start ">
+                                                        <button class="btn btn-danger py-1 px-3 f-13 "
+                                                            data-toggle="modal" data-target="#editContent3"> حذف
+                                                        </button>
+                                                    </div>
+                                                    <!-- Modal -->
+                                                    <div class="modal  fade" id="editContent3" tabindex="-1"
+                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-sm">
+                                                            <div class="modal-content">
+
+                                                                <div class="modal-body text-center">
+                                                                    <h6> هل حقا تريد خروج المشرف/ة من الحلقة </h6>
+                                                                </div>
+                                                                <div
+                                                                    class="modal-footer modal-center flex-center border-0">
+                                                                    <a href="index.html" type="button"
+                                                                        class="btn main_btn sm">نعم</a>
+                                                                    <button type="button"
+                                                                        class="btn  main_btn btn-danger sm"
+                                                                        data-dismiss="modal">لا</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <a href="selectSupervisor.html" class="w-100 btn main_btn"> اضافة مشرف/ة</a>
+                                </div>
+                                <div class="tab-pane fade " id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="frame rad-5 py-3 px-4 mb-3">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="frame rad-5 d-flex justify-content-between mb-3">
+                                                    <div>
+                                                        <h6 class="mb-1">احمد محمد محمود عبدالله</h6>
+                                                        <div class="text-muted mb-1">
+                                                            <span>رقم الجوال : </span>
+                                                            <span>0100101010</span>
+                                                        </div>
+                                                        <div class="text-muted mb-1">
+                                                            <span> تاريخ الميلاد : </span>
+                                                            <span> 20/02/2023</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="align-items-start ">
+                                                        <button class="btn btn-danger py-1 px-3 f-13 "
+                                                            data-toggle="modal" data-target="#editContent4"> حذف
+                                                        </button>
+                                                    </div>
+                                                    <!-- Modal -->
+                                                    <div class="modal  fade" id="editContent4" tabindex="-1"
+                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-sm">
+                                                            <div class="modal-content">
+
+                                                                <div class="modal-body text-center">
+                                                                    <h6> هل حقا تريد خروج المشرف/ة من الحلقة </h6>
+                                                                </div>
+                                                                <div
+                                                                    class="modal-footer modal-center flex-center border-0">
+                                                                    <a href="index.html" type="button"
+                                                                        class="btn main_btn sm">نعم</a>
+                                                                    <button type="button"
+                                                                        class="btn  main_btn btn-danger sm"
+                                                                        data-dismiss="modal">لا</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="frame rad-5 d-flex justify-content-between mb-3">
+                                                    <div>
+                                                        <h6 class="mb-1">احمد محمد محمود عبدالله</h6>
+                                                        <div class="text-muted mb-1">
+                                                            <span>رقم الجوال : </span>
+                                                            <span>0100101010</span>
+                                                        </div>
+                                                        <div class="text-muted mb-1">
+                                                            <span> تاريخ الميلاد : </span>
+                                                            <span> 20/02/2023</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="align-items-start ">
+                                                        <button class="btn btn-danger py-1 px-3 f-13 "
+                                                            data-toggle="modal" data-target="#editContent5"> حذف
+                                                        </button>
+                                                    </div>
+                                                    <!-- Modal -->
+                                                    <div class="modal  fade" id="editContent5" tabindex="-1"
+                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-sm">
+                                                            <div class="modal-content">
+
+                                                                <div class="modal-body text-center">
+                                                                    <h6> هل حقا تريد خروج المشرف/ة من الحلقة </h6>
+                                                                </div>
+                                                                <div
+                                                                    class="modal-footer modal-center flex-center border-0">
+                                                                    <a href="index.html" type="button"
+                                                                        class="btn main_btn sm">نعم</a>
+                                                                    <button type="button"
+                                                                        class="btn  main_btn btn-danger sm"
+                                                                        data-dismiss="modal">لا</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="frame rad-5 d-flex justify-content-between mb-3">
+                                                    <div>
+                                                        <h6 class="mb-1">احمد محمد محمود عبدالله</h6>
+                                                        <div class="text-muted mb-1">
+                                                            <span>رقم الجوال : </span>
+                                                            <span>0100101010</span>
+                                                        </div>
+                                                        <div class="text-muted mb-1">
+                                                            <span> تاريخ الميلاد : </span>
+                                                            <span> 20/02/2023</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="align-items-start ">
+                                                        <button class="btn btn-danger py-1 px-3 f-13 "
+                                                            data-toggle="modal" data-target="#editContent6"> حذف
+                                                        </button>
+                                                    </div>
+                                                    <!-- Modal -->
+                                                    <div class="modal  fade" id="editContent6" tabindex="-1"
+                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-sm">
+                                                            <div class="modal-content">
+
+                                                                <div class="modal-body text-center">
+                                                                    <h6> هل حقا تريد خروج المشرف/ة من الحلقة </h6>
+                                                                </div>
+                                                                <div
+                                                                    class="modal-footer modal-center flex-center border-0">
+                                                                    <a href="index.html" type="button"
+                                                                        class="btn main_btn sm">نعم</a>
+                                                                    <button type="button"
+                                                                        class="btn  main_btn btn-danger sm"
+                                                                        data-dismiss="modal">لا</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="frame rad-5 d-flex justify-content-between mb-3">
+                                                    <div>
+                                                        <h6 class="mb-1">احمد محمد محمود عبدالله</h6>
+                                                        <div class="text-muted mb-1">
+                                                            <span>رقم الجوال : </span>
+                                                            <span>0100101010</span>
+                                                        </div>
+                                                        <div class="text-muted mb-1">
+                                                            <span> تاريخ الميلاد : </span>
+                                                            <span> 20/02/2023</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="align-items-start ">
+                                                        <button class="btn btn-danger py-1 px-3 f-13 "
+                                                            data-toggle="modal" data-target="#editContent7"> حذف
+                                                        </button>
+                                                    </div>
+                                                    <!-- Modal -->
+                                                    <div class="modal  fade" id="editContent7" tabindex="-1"
+                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-sm">
+                                                            <div class="modal-content">
+
+                                                                <div class="modal-body text-center">
+                                                                    <h6> هل حقا تريد خروج المشرف/ة من الحلقة </h6>
+                                                                </div>
+                                                                <div
+                                                                    class="modal-footer modal-center flex-center border-0">
+                                                                    <a href="index.html" type="button"
+                                                                        class="btn main_btn sm">نعم</a>
+                                                                    <button type="button"
+                                                                        class="btn  main_btn btn-danger sm"
+                                                                        data-dismiss="modal">لا</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="frame rad-5 d-flex justify-content-between mb-3">
+                                                    <div>
+                                                        <h6 class="mb-1">احمد محمد محمود عبدالله</h6>
+                                                        <div class="text-muted mb-1">
+                                                            <span>رقم الجوال : </span>
+                                                            <span>0100101010</span>
+                                                        </div>
+                                                        <div class="text-muted mb-1">
+                                                            <span> تاريخ الميلاد : </span>
+                                                            <span> 20/02/2023</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="align-items-start ">
+                                                        <button class="btn btn-danger py-1 px-3 f-13 "
+                                                            data-toggle="modal" data-target="#editContent8"> حذف
+                                                        </button>
+                                                    </div>
+                                                    <!-- Modal -->
+                                                    <div class="modal  fade" id="editContent8" tabindex="-1"
+                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-sm">
+                                                            <div class="modal-content">
+
+                                                                <div class="modal-body text-center">
+                                                                    <h6> هل حقا تريد خروج المشرف/ة من الحلقة </h6>
+                                                                </div>
+                                                                <div
+                                                                    class="modal-footer modal-center flex-center border-0">
+                                                                    <a href="index.html" type="button"
+                                                                        class="btn main_btn sm">نعم</a>
+                                                                    <button type="button"
+                                                                        class="btn  main_btn btn-danger sm"
+                                                                        data-dismiss="modal">لا</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="frame rad-5 d-flex justify-content-between mb-3">
+                                                    <div>
+                                                        <h6 class="mb-1">احمد محمد محمود عبدالله</h6>
+                                                        <div class="text-muted mb-1">
+                                                            <span>رقم الجوال : </span>
+                                                            <span>0100101010</span>
+                                                        </div>
+                                                        <div class="text-muted mb-1">
+                                                            <span> تاريخ الميلاد : </span>
+                                                            <span> 20/02/2023</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="align-items-start ">
+                                                        <button class="btn btn-danger py-1 px-3 f-13 "
+                                                            data-toggle="modal" data-target="#editContent9"> حذف
+                                                        </button>
+                                                    </div>
+                                                    <!-- Modal -->
+                                                    <div class="modal  fade" id="editContent9" tabindex="-1"
+                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-sm">
+                                                            <div class="modal-content">
+
+                                                                <div class="modal-body text-center">
+                                                                    <h6> هل حقا تريد خروج المشرف/ة من الحلقة </h6>
+                                                                </div>
+                                                                <div
+                                                                    class="modal-footer modal-center flex-center border-0">
+                                                                    <a href="index.html" type="button"
+                                                                        class="btn main_btn sm">نعم</a>
+                                                                    <button type="button"
+                                                                        class="btn  main_btn btn-danger sm"
+                                                                        data-dismiss="modal">لا</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <a href="selectTeacher.html" class="w-100 btn main_btn"> اضافة معلم/ة</a>
+                                </div>
+                                <div class="tab-pane fade" id="teachers" role="tabpanel" aria-labelledby="teachers-tab">
+                                    <div class="frame rad-5 py-3 px-4 mb-3">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="frame rad-5 d-flex justify-content-between mb-3">
+                                                    <div>
+                                                        <img src="img/student.png" alt="" class="student mb-1">
+                                                        <h6 class="mb-1">احمد محمد محمود عبدالله</h6>
+                                                    </div>
+                                                    <div class="align-items-start ">
+                                                        <button class="btn btn-danger py-1 px-3 f-13 "
+                                                            data-toggle="modal" data-target="#student"> حذف </button>
+                                                    </div>
+                                                    <!-- Modal -->
+                                                    <div class="modal  fade" id="student" tabindex="-1"
+                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-sm">
+                                                            <div class="modal-content">
+
+                                                                <div class="modal-body text-center">
+                                                                    <h6> هل حقا تريد خروج المشرف/ة من الحلقة </h6>
+                                                                </div>
+                                                                <div
+                                                                    class="modal-footer modal-center flex-center border-0">
+                                                                    <a href="index.html" type="button"
+                                                                        class="btn main_btn sm">نعم</a>
+                                                                    <button type="button"
+                                                                        class="btn  main_btn btn-danger sm"
+                                                                        data-dismiss="modal">لا</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="frame rad-5 d-flex justify-content-between mb-3">
+                                                    <div>
+                                                        <img src="img/student.png" alt="" class="student mb-1">
+                                                        <h6 class="mb-1">احمد محمد محمود عبدالله</h6>
+                                                    </div>
+                                                    <div class="align-items-start ">
+                                                        <button class="btn btn-danger py-1 px-3 f-13 "
+                                                            data-toggle="modal" data-target="#student1"> حذف </button>
+                                                    </div>
+                                                    <!-- Modal -->
+                                                    <div class="modal  fade" id="student1" tabindex="-1"
+                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-sm">
+                                                            <div class="modal-content">
+
+                                                                <div class="modal-body text-center">
+                                                                    <h6> هل حقا تريد خروج المشرف/ة من الحلقة </h6>
+                                                                </div>
+                                                                <div
+                                                                    class="modal-footer modal-center flex-center border-0">
+                                                                    <a href="index.html" type="button"
+                                                                        class="btn main_btn sm">نعم</a>
+                                                                    <button type="button"
+                                                                        class="btn  main_btn btn-danger sm"
+                                                                        data-dismiss="modal">لا</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="frame rad-5 d-flex justify-content-between mb-3">
+                                                    <div>
+                                                        <img src="img/student3.png" alt="" class="student mb-1">
+                                                        <h6 class="mb-1">احمد محمد محمود عبدالله</h6>
+                                                    </div>
+                                                    <div class="align-items-start ">
+                                                        <button class="btn btn-danger py-1 px-3 f-13 "
+                                                            data-toggle="modal" data-target="#student2"> حذف </button>
+                                                    </div>
+                                                    <!-- Modal -->
+                                                    <div class="modal  fade" id="student2" tabindex="-1"
+                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-sm">
+                                                            <div class="modal-content">
+
+                                                                <div class="modal-body text-center">
+                                                                    <h6> هل حقا تريد خروج المشرف/ة من الحلقة </h6>
+                                                                </div>
+                                                                <div
+                                                                    class="modal-footer modal-center flex-center border-0">
+                                                                    <a href="index.html" type="button"
+                                                                        class="btn main_btn sm">نعم</a>
+                                                                    <button type="button"
+                                                                        class="btn  main_btn btn-danger sm"
+                                                                        data-dismiss="modal">لا</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="frame rad-5 d-flex justify-content-between mb-3">
+                                                    <div>
+                                                        <img src="img/student2.png" alt="" class="student mb-1">
+                                                        <h6 class="mb-1">احمد محمد محمود عبدالله</h6>
+                                                    </div>
+                                                    <div class="align-items-start ">
+                                                        <button class="btn btn-danger py-1 px-3 f-13 "
+                                                            data-toggle="modal" data-target="#student3"> حذف </button>
+                                                    </div>
+                                                    <!-- Modal -->
+                                                    <div class="modal  fade" id="student3" tabindex="-1"
+                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-sm">
+                                                            <div class="modal-content">
+
+                                                                <div class="modal-body text-center">
+                                                                    <h6> هل حقا تريد خروج المشرف/ة من الحلقة </h6>
+                                                                </div>
+                                                                <div
+                                                                    class="modal-footer modal-center flex-center border-0">
+                                                                    <a href="index.html" type="button"
+                                                                        class="btn main_btn sm">نعم</a>
+                                                                    <button type="button"
+                                                                        class="btn  main_btn btn-danger sm"
+                                                                        data-dismiss="modal">لا</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="frame rad-5 d-flex justify-content-between mb-3">
+                                                    <div>
+                                                        <img src="img/student.png" alt="" class="student mb-1">
+                                                        <h6 class="mb-1">احمد محمد محمود عبدالله</h6>
+                                                    </div>
+                                                    <div class="align-items-start ">
+                                                        <button class="btn btn-danger py-1 px-3 f-13 "
+                                                            data-toggle="modal" data-target="#student4"> حذف </button>
+                                                    </div>
+                                                    <!-- Modal -->
+                                                    <div class="modal  fade" id="student4" tabindex="-1"
+                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-sm">
+                                                            <div class="modal-content">
+
+                                                                <div class="modal-body text-center">
+                                                                    <h6> هل حقا تريد خروج المشرف/ة من الحلقة </h6>
+                                                                </div>
+                                                                <div
+                                                                    class="modal-footer modal-center flex-center border-0">
+                                                                    <a href="index.html" type="button"
+                                                                        class="btn main_btn sm">نعم</a>
+                                                                    <button type="button"
+                                                                        class="btn  main_btn btn-danger sm"
+                                                                        data-dismiss="modal">لا</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="frame rad-5 d-flex justify-content-between mb-3">
+                                                    <div>
+                                                        <img src="img/student.png" alt="" class="student mb-1">
+                                                        <h6 class="mb-1">احمد محمد محمود عبدالله</h6>
+                                                    </div>
+                                                    <div class="align-items-start ">
+                                                        <button class="btn btn-danger py-1 px-3 f-13 "
+                                                            data-toggle="modal" data-target="#student5"> حذف </button>
+                                                    </div>
+                                                    <!-- Modal -->
+                                                    <div class="modal  fade" id="student5" tabindex="-1"
+                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-sm">
+                                                            <div class="modal-content">
+
+                                                                <div class="modal-body text-center">
+                                                                    <h6> هل حقا تريد خروج المشرف/ة من الحلقة </h6>
+                                                                </div>
+                                                                <div
+                                                                    class="modal-footer modal-center flex-center border-0">
+                                                                    <a href="index.html" type="button"
+                                                                        class="btn main_btn sm">نعم</a>
+                                                                    <button type="button"
+                                                                        class="btn  main_btn btn-danger sm"
+                                                                        data-dismiss="modal">لا</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="frame rad-5 d-flex justify-content-between mb-3">
+                                                    <div>
+                                                        <img src="img/student3.png" alt="" class="student mb-1">
+                                                        <h6 class="mb-1">احمد محمد محمود عبدالله</h6>
+                                                    </div>
+                                                    <div class="align-items-start ">
+                                                        <button class="btn btn-danger py-1 px-3 f-13 "
+                                                            data-toggle="modal" data-target="#student6"> حذف </button>
+                                                    </div>
+                                                    <!-- Modal -->
+                                                    <div class="modal  fade" id="student6" tabindex="-1"
+                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-sm">
+                                                            <div class="modal-content">
+
+                                                                <div class="modal-body text-center">
+                                                                    <h6> هل حقا تريد خروج المشرف/ة من الحلقة </h6>
+                                                                </div>
+                                                                <div
+                                                                    class="modal-footer modal-center flex-center border-0">
+                                                                    <a href="index.html" type="button"
+                                                                        class="btn main_btn sm">نعم</a>
+                                                                    <button type="button"
+                                                                        class="btn  main_btn btn-danger sm"
+                                                                        data-dismiss="modal">لا</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="frame rad-5 d-flex justify-content-between mb-3">
+                                                    <div>
+                                                        <img src="img/student2.png" alt="" class="student mb-1">
+                                                        <h6 class="mb-1">احمد محمد محمود عبدالله</h6>
+                                                    </div>
+                                                    <div class="align-items-start ">
+                                                        <button class="btn btn-danger py-1 px-3 f-13 "
+                                                            data-toggle="modal" data-target="#student7"> حذف </button>
+                                                    </div>
+                                                    <!-- Modal -->
+                                                    <div class="modal  fade" id="student7" tabindex="-1"
+                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-sm">
+                                                            <div class="modal-content">
+
+                                                                <div class="modal-body text-center">
+                                                                    <h6> هل حقا تريد خروج المشرف/ة من الحلقة </h6>
+                                                                </div>
+                                                                <div
+                                                                    class="modal-footer modal-center flex-center border-0">
+                                                                    <a href="index.html" type="button"
+                                                                        class="btn main_btn sm">نعم</a>
+                                                                    <button type="button"
+                                                                        class="btn  main_btn btn-danger sm"
+                                                                        data-dismiss="modal">لا</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <a href="students.html" class="w-100 btn main_btn"> الطلاب الجدد </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <!-- ________________ // loader // ________________ -->
+    <div class="loader">
+        <img src="img/logo_one.png" alt="" class="logoWhite animate__flip animate__animated">
+    </div>
+    <!-- _______________ // end_Page // _______________ -->
+    <!-- fixed -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/flatpicker.min.js"></script>
+    <!-- // main-script //  -->
+    <script src="js/script.js"></script>
+
+    <script>
+        // time
+        $(".inputTime").flatpickr({
+            enableTime: true,
+            noCalendar: true,
+            defaultHour: 10,
+        })
+        // from to input----
+        $(".inputText1").flatpickr({
+            enableTime: true,
+            noCalendar: true,
+            defaultHour: 10,
+
+            onChange: function (selectedDates, dateStr, instance) {
+                // $(".inputText2").prop('disabled', false);
+                $(".inputText2").flatpickr({
+                    minTime: dateStr,
+                    enableTime: true,
+                    noCalendar: true,
+                    defaultHour: Number($(".inputText1").val().slice(0, 2)) + 1
+                });
+            }
+        });
+        // select 2 
+        $(document).ready(function () {
+            $('.select').select2({
+                placeholder: "30 دقيقة",
+                dropdownCssClass: 'no-search',
+            });
+        });
+        let collectTimeBtn = document.querySelector('.collectTime');
+        collectTimeBtn.onclick = function () {
+            if ($('.select').val() == "" || $(".inputText1").val() == "" || $(".inputText2").val() == "") {
+                return
+            } else {
+                $('.select').select2();
+                let day = $('.select').select2("val")
+                let InputVal1 = $(".inputText1").val()
+                let InputVal2 = $(".inputText2").val()
+                // ///////
+                let div = document.querySelector('.containShowTime')
+                let child = document.createElement('div')
+                child.innerHTML = `<div class="showTime mb-3" data-id="#one">
+                                <div>
+                                    <div> ${day} </div>
+                                    <div>
+                                        <span>من</span>
+                                        <span class="fromText"> ${InputVal1} </span>
+                                        <span>الي</span>
+                                        <span class="toText"> ${InputVal2} </span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-danger f-12 align-self-start" onclick="this.parentElement.remove()"> حذف
+                                    </button>
+                            </div>` ;
+                div.appendChild(child)
+                // ////// empty inputs 
+                $('.select').select2("val", "")
+                $(".inputText1").val('')
+                $(".inputText2").val('')
+            }
+        }
+        function delParent() {
+            console.log('bla s')
+            this.parentElement.delete();
+        }
+    </script>
+</body>
+
+</html>

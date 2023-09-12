@@ -1,0 +1,159 @@
+
+  body{
+    direction: ltr;
+    text-align: left ;
+  }
+  .nice-select:after {
+    left: unset;
+    right: 10px;
+
+  }
+  /* ------------------- main-layout -------------------- */
+  .dashboard_topper {
+    left: 50px;
+    right: 0;
+  }
+
+  #main {
+    width: calc(100% - 50px);
+    margin-right: unset;
+    margin-left: 50px;
+    transition: margin-left 0.5s;
+  }
+  
+  
+  
+  #main.fullWidth .dashboard_topper {
+    left: 0;
+    right: 0;
+  }
+  
+  .about_section:hover::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: unset;
+  }
+  
+  .contain-notification-num {
+  
+    left: unset;
+    right: -1px;
+  }
+  
+ 
+  /* ----------------- // table // ---------------------  */
+  
+  
+  .table-head tr th:first-of-type {
+    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .table-head tr th:last-of-type {
+    border-top-left-radius: unset;
+    border-bottom-left-radius: unset;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  
+  .project_table tbody tr:first-of-type td:first-of-type {
+    border-top-right-radius: unset !important;
+    border-top-left-radius: 5px !important;
+
+  }
+  
+  .project_table tbody tr:first-of-type td:last-of-type {
+    border-top-left-radius: unset !important;
+    border-top-right-radius: 5px !important;
+
+  }
+  
+  
+
+ 
+  /* ------------------- form -------------------- */
+  
+  .edit_icon {
+    color: var(--wh);
+    text-align: center;
+    line-height: 35px;
+    width: 90%;
+    height: 90%;
+    font-size: 18px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .checkBox:checked+.contain-check {
+    background-color: var(--main);
+  }
+  
+  .edit-time {
+    display: none;
+  }
+  
+  /* ------------------- main-consulting -------------------- */
+  
+  .star-widget label {
+    float: left;
+  }
+
+  .project_table tbody.space::before,
+  tbody.space::after {
+    right: unset;
+    left: 0;
+  }
+  
+  .project_table tbody::after {
+    right: 0;
+    left: unset
+  }
+  
+
+  .fc .fc-button-primary:disabled {
+    right: unset;
+    left: 0;
+  }
+  /*  */
+  .select2-container--default .select2-selection--single .select2-selection__arrow {
+    left: unset;
+    right: 10px;
+}
+.select2-container--default .select2-selection--single {
+
+  justify-content: flex-start;
+}
+.contain-arrowL {
+  transform: rotate(180deg);
+}
+.project_table tbody::before {
+  right: unset;
+  left: 0;
+}
+/* ////////////////////////////////// */
+.inputIcon {
+  left: unset;
+  right: 10px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 100%;
+  left: unset !important;
+  right: 1px !important;
+}
+.searchIcon {
+  position: absolute;
+  left: unset;
+  right: 10px;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <!-- meta  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- // bootstrab // -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/validation-code.css">
+    <!-- // fontawesome // -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- // css // -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/en-style.css"> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="side_menu d-flex flex-column">
+        <div class=" contain_dashboard_logo text-center mb-20 ">
+            <img src="img/user2.png" alt="user" class="userImg" loading="lazy">
+
+            <h6 class=" text-wrap hide-section">
+                مركز النور لتحفيظ القرآن الكريم
+            </h6>
+        </div>
+        <ul class="side_menu_ul">
+            <li class="about_section active">
+                <a href="index.html" class="d-flex align-items-center  ">
+                    <i class="fa-solid fa-house "></i>
+                    <span class="hide-section m-start-10">الرئيسية </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="supervisor.html" class="d-flex align-items-center  ">
+                    <i class="fa-regular fa-calendar-minus "></i>
+
+                    <span class="hide-section m-start-10"> المشرفون </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="teachers.html" class="d-flex align-items-center ">
+                    <i class="fa-solid fa-book-open "></i>
+                    <span class="hide-section m-start-10">المعلمون </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="students.html" class="d-flex align-items-center   ">
+                    <i class="fa-solid fa-book "></i>
+                    <span class="hide-section m-start-10"> الطلاب </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="rings.html" class="d-flex align-items-center  ">
+                    <i class="fa-regular fa-circle-dot "></i>
+                    <span class="hide-section m-start-10"> الحلقات </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="plans.html" class="d-flex align-items-center  ">
+                    <i class="fa-solid fa-clipboard-list "></i>
+                    <span class="hide-section m-start-10"> الخطط </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="settings.html" class="d-flex align-items-center  ">
+                    <i class="fa-solid fa-gear  "></i>
+                    <span class="hide-section m-start-10 "> الاعدادات </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="contactUs.html" class="d-flex align-items-center  ">
+                    <i class="fa-solid fa-phone  "></i>
+                    <span class="hide-section m-start-10 "> تواصل معنا </span>
+                </a>
+            </li>
+
+            <li class="about_section">
+                <a href="login.html" class="d-flex align-items-center  ">
+                    <i class="fa-solid fa-right-from-bracket "></i>
+                    <span class="hide-section m-start-10"> تسجيل الخروج </span>
+                </a>
+            </li>
+
+
+        </ul>
+    </div>
+    <div id="main">
+        <header class="dashboard_topper p-10">
+            <div class="container">
+                <div class="flex-between">
+                    <h5> تغيير رقم الجوال </h5>
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="logo" class="logo m-end-10 m-auto" loading="lazy">
+                    </a>
+                    <a href="notification.html" class="contain-notification">
+                        <i class="fa-regular fa-bell f-20  main-color"></i>
+
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="body-content">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <form action="settings.html" class="s-space ">
+                            <div class="flex-center mb-3">
+                                <input type="number" class="pin" maxlength="6" autofocus />
+                            </div>
+                            <button class="w-100 btn main_btn mb-3">تأكيد </button>
+                            <a href="" class="text-dark text-center d-block f-17">  لم يصلك كود ؟  </a>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ________________ // loader // ________________ -->
+    <div class="loader">
+        <div class="path">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- _______________ // end_Page // _______________ -->
+    <!-- fixed -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/jquery.segmentedInput.js"></script>
+    <!-- // main-script //  -->
+    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.pin').segmentedInput({
+                fieldClasses: 'class1 class2'
+            });
+        });
+    </script>
+</body>
+
+</html>

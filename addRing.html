@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <!-- meta  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- // bootstrab // -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <!-- flatPicker -->
+    <link rel="stylesheet" href="css/flatpickr.min.css">
+    <!-- // fontawesome // -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- // css // -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/en-style.css"> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="side_menu d-flex flex-column ">
+
+        <div class=" contain_dashboard_logo text-center mb-20 ">
+            <img src="img/user2.png" alt="user" class="userImg" loading="lazy">
+
+            <h6 class=" text-wrap hide-section">
+                مركز النور لتحفيظ القرآن الكريم
+            </h6>
+        </div>
+        <ul class="side_menu_ul">
+            <li class="about_section active">
+                <a href="index.html" class="d-flex align-items-center  ">
+                    <i class="fa-solid fa-house "></i>
+                    <span class="hide-section m-start-10">الرئيسية </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="supervisor.html" class="d-flex align-items-center  ">
+                    <i class="fa-regular fa-calendar-minus "></i>
+
+                    <span class="hide-section m-start-10"> المشرفون </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="teachers.html" class="d-flex align-items-center ">
+                    <i class="fa-solid fa-book-open "></i>
+                    <span class="hide-section m-start-10">المعلمون </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="students.html" class="d-flex align-items-center   ">
+                    <i class="fa-solid fa-book "></i>
+                    <span class="hide-section m-start-10"> الطلاب </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="rings.html" class="d-flex align-items-center  ">
+                    <i class="fa-regular fa-circle-dot "></i>
+                    <span class="hide-section m-start-10"> الحلقات </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="plans.html" class="d-flex align-items-center  ">
+                    <i class="fa-solid fa-clipboard-list "></i>
+                    <span class="hide-section m-start-10"> الخطط </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="settings.html" class="d-flex align-items-center  ">
+                    <i class="fa-solid fa-gear  "></i>
+                    <span class="hide-section m-start-10 "> الاعدادات </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="contactUs.html" class="d-flex align-items-center  ">
+                    <i class="fa-solid fa-phone  "></i>
+                    <span class="hide-section m-start-10 "> تواصل معنا </span>
+                </a>
+            </li>
+
+            <li class="about_section">
+                <a href="login.html" class="d-flex align-items-center  ">
+                    <i class="fa-solid fa-right-from-bracket "></i>
+                    <span class="hide-section m-start-10"> تسجيل الخروج </span>
+                </a>
+            </li>
+
+
+        </ul>
+    </div>
+    <div id="main">
+        <header class="dashboard_topper p-10">
+            <div class="container">
+                <div class="flex-between">
+                    <h5> اضافة حلقة </h5>
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="logo" class="logo m-end-10 m-auto" loading="lazy">
+                    </a>
+                    <a href="notification.html" class="contain-notification">
+                        <i class="fa-regular fa-bell f-20  main-color"></i>
+
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="body-content">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <form class="s-space" action="ringDetails.html">
+                            <div class="form-group">
+                                <label class="form-label" for="name"><span class="m-end-5"> اسم الحلقة
+                                    </span><span class="text-danger f-16">*</span></label>
+                                <input type="name" class="form-control" id="name" placeholder="الحلقة الاولي">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="time"><span class="m-end-5"> الوقت الخاص
+                                        بالحلقة
+                                    </span><span class="text-danger f-16">*</span></label>
+                                <input type="time" class="form-control time" id="time" placeholder="30">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="num"><span class="m-end-5"> العدد المسموح
+                                        بالحلقة
+                                    </span><span class="text-danger f-16">*</span></label>
+                                <input type="number" class="form-control inputTime" id="num" placeholder="حلقتان">
+                            </div>
+                            <div class="form-row mb-3 align-items-end">
+                                <div class="col-lg-3 col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="text" class="form-label"><span class="m-end-5"> يوم
+                                            </span><span class="text-danger f-16">*</span></label>
+                                        <select class=" select form-control" name="states[]">
+                                            <option value="السبت">السبت </option>
+                                            <option value="الأحد">الأحد </option>
+                                            <option value="الأثنين">الأثنين </option>
+                                            <option value="الثلاثاء">الثلاثاء </option>
+                                            <option value="الاربعاء">الاربعاء </option>
+                                            <option value="الخميس">الخميس </option>
+                                            <option value="الجمعة">الجمعة </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="from" class="form-label"><span class="m-end-5">
+                                                من </span><span class="text-danger f-16">*</span></label>
+                                        <input type="text" id="from" class="inputText1 from-control timeBox"
+                                            placeholder="من">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="to" class="form-label"><span class="m-end-5">
+                                                الي </span><span class="text-danger f-16">*</span></label>
+                                        <input type="text" class="inputText2 from-control  timeBox" id="to"
+                                            placeholder="الي">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-12">
+                                    <div class="form-group">
+                                        <button class="btn main_btn w-100 collectTime " type="button"> حفظ </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="containShowTime">
+                                <div class="showTime mb-3" data-id="#one">
+                                    <div>
+                                        <div> السبت</div>
+                                        <div>
+                                            <span>من</span>
+                                            <span class="fromText"> 10 ص </span>
+                                            <span>الي</span>
+                                            <span class="toText"> 6 م</span>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-danger f-12 align-self-start"
+                                        onclick="this.parentElement.remove()"> حذف
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="btn main_btn w-100" @click="">
+                                حفظ
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ________________ // loader // ________________ -->
+    <div class="loader">
+        <img src="img/logo_one.png" alt="" class="logoWhite animate__flip animate__animated">
+    </div>
+    <!-- _______________ // end_Page // _______________ -->
+    <!-- fixed -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/flatpicker.min.js"></script>
+    <!-- // main-script //  -->
+    <script src="js/script.js"></script>
+    <script>
+        // //////////////////////////////////
+        $(document).ready(function () {
+            $(".time").flatpickr({
+                enableTime: true,
+                minTime: "16:00",
+                maxTime: "22:00",
+                noCalendar: true,
+
+            });
+        })
+        // from to input----
+        $(".inputText1").flatpickr({
+            enableTime: true,
+            noCalendar: true,
+            defaultHour: 10,
+
+            onChange: function (selectedDates, dateStr, instance) {
+                // $(".inputText2").prop('disabled', false);
+                $(".inputText2").flatpickr({
+                    minTime: dateStr,
+                    enableTime: true,
+                    noCalendar: true,
+                    defaultHour: Number($(".inputText1").val().slice(0, 2)) + 1
+                });
+            }
+        });
+        // select 2 
+        $(document).ready(function () {
+            $('.select').select2({
+                placeholder: "30 دقيقة",
+                dropdownCssClass: 'no-search',
+            });
+        });
+        let collectTimeBtn = document.querySelector('.collectTime');
+        collectTimeBtn.onclick = function () {
+            if ($('.select').val() == "" || $(".inputText1").val() == "" || $(".inputText2").val() == "") {
+                return
+            } else {
+                $('.select').select2();
+                let day = $('.select').select2("val")
+                let InputVal1 = $(".inputText1").val()
+                let InputVal2 = $(".inputText2").val()
+                // ///////
+                let div = document.querySelector('.containShowTime')
+                let child = document.createElement('div')
+                child.innerHTML = `<div class="showTime mb-3" data-id="#one">
+                                <div>
+                                    <div> ${day} </div>
+                                    <div>
+                                        <span>من</span>
+                                        <span class="fromText"> ${InputVal1} </span>
+                                        <span>الي</span>
+                                        <span class="toText"> ${InputVal2} </span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-danger f-12 align-self-start" onclick="this.parentElement.remove()"> حذف
+                                    </button>
+                            </div>` ;
+                div.appendChild(child)
+                // ////// empty inputs 
+                $('.select').select2("val", "")
+                $(".inputText1").val('')
+                $(".inputText2").val('')
+            }
+
+
+        }
+        function delParent() {
+            console.log('bla s')
+            this.parentElement.delete();
+        }
+    </script>
+</body>
+
+</html>
